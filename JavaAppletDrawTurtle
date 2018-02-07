@@ -1,0 +1,60 @@
+//**********************************************************************
+//  MyApplet2.java  Author:Kuber/Tulsi
+//**********************************************************************
+
+package org.me.hello;
+
+     import javax.swing.JApplet;
+     import java.awt.*;
+
+     public class MyApplet2 extends JApplet {
+         
+         //--------------------------------------------------------------
+         // Draws a Turtle.
+         //--------------------------------------------------------------
+         public void paint(Graphics page) {
+             final int MID = 150;
+             final int TOP = 50;
+             
+             page.setColor(Color.red);
+             page.fillRect(0, 0, 300, 50);
+             
+             page.setColor (Color.blue);
+             page.fillRect (0, 50, 300, 50);
+             
+             page.setColor(Color.red);
+             page.fillRect(0, 100, 300, 50);
+             
+             page.setColor (Color.blue);
+             page.fillRect (0, 150, 300, 50);    //wildcat colored ground
+             
+             page.setColor (Color.white);
+             page.fillOval (10, -40, 80, 80);  //moon
+             
+             page.setColor (Color.green);
+             page.fillOval (MID-50, TOP, 100, 100);   //body
+             page.fillOval (MID+10, TOP-35, 50, 50);   //head
+             
+             page.setColor (Color.green);
+             page.fillOval (MID-50, TOP-15, 35, 35);  //left upper leg
+             page.fillOval (MID+40, TOP+45, 35, 35);  //right upper leg
+             page.fillOval (MID-70, TOP+55, 35, 35);  //left lower leg
+             page.fillOval (MID, TOP+85, 35, 35);  //right lower leg
+                     
+             page.setColor (Color.black);
+             page.fillOval (MID+25, TOP-30, 10, 5);  //left eye
+             page.fillOval (MID+45, TOP-20, 5, 10);   //right eye
+             
+             page.setColor (Color.black);
+             page.drawOval (MID-50, TOP, 100, 100); //shell
+             page.drawOval (MID-25, TOP+25, 50, 50);   //shell design
+             
+             page.setColor (Color.black);
+             page.drawLine (MID, TOP, 150, 75);
+             page.drawLine (MID, TOP+75, 150, 150);
+             page.drawLine (MID-25, TOP+50, 100, 100);
+             page.drawLine (MID+50, TOP+50, 175, 100);
+            
+             
+         }
+     }
